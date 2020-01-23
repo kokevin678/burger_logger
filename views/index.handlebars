@@ -1,0 +1,50 @@
+<img src="/public/assets/img/laughing_burger.jpg" alt="laughing_burger" class="center">
+<h1>Burger Time!!!</h1>
+
+<br>
+
+<h2>Devoure these burger</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#unless devoured}}
+    <li>
+        {{burgerName}}
+        <button class="change-devour" data-id="{{id}}" data-newDevour="{{devour}}">Nom Nom Nom</button>
+    </li>
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<br>
+
+<h2>Burger already devoured</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#if devoured}}
+    <li>
+        {{burgerName}}
+    </li>
+    {{/if}}
+  {{/each}}
+</ul>
+
+<br>
+
+<h2>Add a Burger</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="burgerName">Add a burger:</label>
+    <input type="text" id="burgerName" name="burger">
+  </div>
+
+  <div class="form-group">
+    <label for="devoured">Did you eat it yet?</label><br>
+    <input type="radio" name="devoured" value="1" checked>Already Devoured<br>
+    <input type="radio" name="devoured" value="0">NOoo!! I want to eat it
+  </div>
+
+  <button type="submit">Add burger</button>
+</form>

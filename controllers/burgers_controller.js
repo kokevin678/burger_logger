@@ -34,7 +34,7 @@ router.put("/api/burgers/:id", function(req, res) {
 
   burger.update(
     {
-      sleepy: req.body.sleepy
+      devoured: req.body.devoured
     },
     condition,
     function(result) {
