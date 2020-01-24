@@ -1,6 +1,6 @@
 ### Schema
 
-DROP DATABASE IF EXIST burgerDB;
+DROP DATABASE IF EXISTs burgerDB;
 CREATE DATABASE burgerDB;
 USE burgerDB;
 
