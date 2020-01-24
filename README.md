@@ -23,7 +23,7 @@ First navigate to your terminal and clone the repository(https://kokevin678.gith
 
 
 ## Demo
-[Demo](assets/gif/burger_time.gif)
+[Demo](public/img/burger_time.gif)
 
 
 ## Deployed Link
